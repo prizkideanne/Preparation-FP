@@ -7,11 +7,11 @@ import TableWithSortHeader from "./components/tables/TableWithSortHeader";
 
 function App() {
   return (
-    <div className="flex flex-col bg-blue-100 m-10 p-5 rounded gap-10">
+    <div className="flex flex-col bg-blue-100 md:m-10 p-3 m-2 md:p-5 rounded gap-10">
       {/* TEXT INPUTS */}
       <div className="flex flex-col">
         <h1 className="text-2xl font-bold mb-5">Form Text Input</h1>
-        <div className="gap-4 grid grid-cols-2">
+        <div className="gap-4 grid md:grid-cols-2 grid-cols-1">
           <TextInput
             label={"label"}
             placeholder={"Text input with label and placeholder"}
@@ -25,10 +25,12 @@ function App() {
             label={"Email"}
             type={"email"}
             placeholder={"john@wick.com"}
+            error={"Email is not valid"}
           />
           <TextInput
             label={"Number"}
             type={"number"}
+            disabled
             placeholder={"080989999"}
           />
         </div>

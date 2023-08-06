@@ -5,7 +5,6 @@ const TextInput = ({
   label,
   required,
   disabled,
-  readonly,
   type,
   placeholder,
   error,
@@ -21,7 +20,6 @@ const TextInput = ({
           placeholder={placeholder}
           className={`w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 ${className}`}
           disabled={disabled}
-          readOnly={readonly}
           pattern="[0-9]*"
           required={required}
         />
